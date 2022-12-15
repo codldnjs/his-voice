@@ -1,3 +1,6 @@
+let x
+x=50;
+
 function setup() {
   createCanvas(1920, 1080);
   background(0,90);
@@ -7,6 +10,7 @@ function setup() {
 
 function draw() {
 
-  circle(500,500,100);
-  Fill(0);
+  fill('black');
+  circle(x,500,100);
+  x=x+100;
 }
