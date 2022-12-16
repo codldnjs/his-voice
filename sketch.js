@@ -1,8 +1,8 @@
 let x,y
 
-x=0;
+x=50;
 y=0;
-a=50;
+a=0;
 b=50;
 
 function setup() {
@@ -24,12 +24,13 @@ function draw() {
   if(x>width){
     
     y=y+100;
-    x=0;
+    x=50;
+  
   }
   
   if(a>width){
-    
+   
     b=b+100;
-    a=50;
+    a=0;
   }
 }
