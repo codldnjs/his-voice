@@ -1,9 +1,9 @@
 let x,y
 
-x=50;
-y=50;
-a=100;
-b=100;
+x=0;
+y=0;
+a=50;
+b=50;
 
 function setup() {
   createCanvas(1920, 1080);
@@ -24,12 +24,12 @@ function draw() {
   if(x>width){
     
     y=y+100;
-    x=50;
+    x=0;
   }
   
   if(a>width){
     
     b=b+100;
-    a=100;
+    a=50;
   }
 }
