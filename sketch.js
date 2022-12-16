@@ -12,7 +12,7 @@ function setup() {
 function draw() {
 
   fill(0);
-  circle(x,y,50);
+  circle(x,y,random(40,65));
   
   x=x+100;
 
