@@ -4,24 +4,24 @@ y=0;
 
 function setup() {
   createCanvas(1920, 1080);
-  background(0,90);
+  background(150);
   
  
 }
 
 function draw() {
-  background(255,50);
+  
+  background(255,0.6);
   stroke(0);
   noFill();
-  circle(x,y,random(65,70));
   circle(x,y,random(60,64))
   circle(x,y,random(54,59));
   circle(x,y,random(49,53));
   
   fill(0);
   circle(x,y,random(40,48));
+ 
   x=x+100;
-  
 
   if(x>width+25){
     
@@ -34,5 +34,10 @@ function draw() {
     y=y+50;
     x=50;
     
+  }
+
+  if (y > height) {
+    x = 50;
+    y = 0;
   }
 }
