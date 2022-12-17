@@ -10,8 +10,7 @@ function setup() {
 }
 
 function draw() {
-
-  
+  background(255,50);
   stroke(0);
   noFill();
   circle(x,y,random(65,70));
@@ -21,9 +20,8 @@ function draw() {
   
   fill(0);
   circle(x,y,random(40,48));
-  
-  
   x=x+100;
+  
 
   if(x>width+25){
     
