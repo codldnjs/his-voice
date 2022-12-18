@@ -10,15 +10,10 @@ function setup() {
 }
 
 function draw() {
-  background(255,0.6);
-  stroke(0);
-  noFill();
-  circle(x,y,random(60,64))
-  circle(x,y,random(54,59));
-  circle(x,y,random(49,53));
+  // background(255,0.6);
   
   fill(0);
-  circle(x,y,mouseX/40);
+  circle(x,y,random(50,69));
  
   x=x+100;
 
@@ -35,8 +30,4 @@ function draw() {
     
   }
 
-  if (y > height) {
-    x = 50;
-    y = 0;
-  }
 }
