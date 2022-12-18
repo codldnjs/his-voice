@@ -3,14 +3,13 @@ x=50;
 y=0;
 
 function setup() {
-  createCanvas(1920, 1080);
-  background(150);
+  createCanvas(1900, 960);
+  background(255);
   
  
 }
 
 function draw() {
-  
   background(255,0.6);
   stroke(0);
   noFill();
@@ -19,7 +18,7 @@ function draw() {
   circle(x,y,random(49,53));
   
   fill(0);
-  circle(x,y,random(40,48));
+  circle(x,y,mouseX/40);
  
   x=x+100;
 
