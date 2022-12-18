@@ -4,15 +4,18 @@ y=0;
 
 function setup() {
   createCanvas(1900, 960);
-  background(255);
-  
- 
+  background(255); 
 }
 
 function draw() {
-  // background(255,0.6);
   
-  fill(0);
+  
+  noStroke();
+  if (keyIsPressed==true) {
+    fill('red');
+  }else{
+    fill('black');
+  }
   circle(x,y,random(50,69));
  
   x=x+100;
@@ -29,5 +32,5 @@ function draw() {
     x=50;
     
   }
-
+  
 }
