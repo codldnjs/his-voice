@@ -1,5 +1,5 @@
 
-x=50;
+x=-50;
 y=0;
 
 function setup() {
@@ -11,13 +11,15 @@ function draw() {
   
   
   noStroke();
+  fill('black')
+  circle(x,y,random(50,69));
+
   if (keyIsPressed==true) {
     fill('red');
   }else{
     fill('black');
   }
-  circle(x,y,random(50,69));
- 
+
   x=x+100;
 
   if(x>width+40){
@@ -38,6 +40,9 @@ function draw() {
     x = 50;
     y = 0;
   }
-   
-
+  noFill();
+  stroke('black');
+  strokeWeight(5);
+   circle(x,y,mouseX/20);
+ 
 }
