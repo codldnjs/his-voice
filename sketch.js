@@ -3,7 +3,7 @@ x=50;
 y=0;
 
 function setup() {
-  createCanvas(1900, 960);
+  createCanvas(2000, 960);
   background(255); 
 }
 
@@ -20,17 +20,24 @@ function draw() {
  
   x=x+100;
 
-  if(x>width+25){
+  if(x>width+40){
     
     y=y+50;
     x=0;
   
   }
   
-  if(x>width-25){
+  if(x>width-10){
     y=y+50;
     x=50;
     
   }
-  
+   
+  if (y > height) {
+    background(255,200);
+    x = 50;
+    y = 0;
+  }
+   
+
 }
