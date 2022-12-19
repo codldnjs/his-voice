@@ -11,14 +11,15 @@ function draw() {
   
   
   noStroke();
-  fill('black')
-  circle(x,y,random(50,69));
-
   if (keyIsPressed==true) {
     fill('red');
   }else{
     fill('black');
   }
+
+
+  circle(x,y,random(45,69));
+
 
   x=x+100;
 
@@ -40,9 +41,17 @@ function draw() {
     x = 50;
     y = 0;
   }
+  
   noFill();
-  stroke('black');
-  strokeWeight(5);
-   circle(x,y,mouseX/20);
+  if (keyIsPressed==true) {
+    stroke('red');
+  }else{
+    stroke('black');
+  }
+  strokeWeight(3);
+  circle(x,y,mouseX/20);
+  circle(x,y,mouseY/10);
+
+ 
  
 }
